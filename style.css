@@ -70,15 +70,16 @@ background-color: salmon;
   a:link {
     color: turquoise;
   }
-  a:visited {
-    color: tomato;
-  }
   a:hover {
     color: thistle;
   }
   a:active {
     color: palevioletred;
   }
+  a:visited {
+    color: tomato;
+  }
+  
 button{
   font-family: sans-serif;
   font-size: x-large;
