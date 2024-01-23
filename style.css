@@ -1,0 +1,108 @@
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /*grid-template-areas:
+    "header header  header"
+    "right  main left"
+    "right  main left"
+    "footer footer  footer";*/
+  }
+.grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  color: teal;
+  font-family: sans-serif;
+}
+
+ .header {
+    background: powderblue;  
+    grid-column: span 6;                          
+  }
+  @keyframes headerani {
+    from {background-color: thistle;}
+    to {background-color: salmon;}
+  }
+  
+.box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100px;
+  background-color: pink;
+  animation-name: headerani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+  .footer {
+    background: powderblue;
+    grid-row: 6;
+    grid-column: span 6;    
+  }
+
+  .left {            
+    background-color: lavender; 
+    grid-column: span 1;
+    grid-row: span 4;
+  }
+  
+  .right {
+background-color: lavender;
+  grid-column: 6;
+    grid-row: span 4;
+  }
+
+  .main {
+background-color: salmon;
+  grid-column: 2/6;
+  grid-row: 2/6;
+  text-align: center;
+    
+  }
+
+  a:link {
+    color: turquoise;
+  }
+  a:visited {
+    color: tomato;
+  }
+  a:hover {
+    color: thistle;
+  }
+  a:active {
+    color: palevioletred;
+  }
+button{
+  font-family: sans-serif;
+  font-size: x-large;
+  background-color: powderblue;
+  color: tomato;
+}
+button:hover{
+  background-color: turquoise;
+}
+
+  li:nth-child(3n){
+    background-color: thistle;
+  }
+  li:nth-child(3n-2){
+    background-color: powderblue;
+  }
+  li:nth-child(odd){
+    font-family: cursive;
+  }
+li:not(:hover){
+ background-color: salmon;
+ font-size: large;
+}
+
+input:checked {
+  accent-color: salmon;
+}
