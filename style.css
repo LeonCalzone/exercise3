@@ -1,3 +1,6 @@
+*{
+  margin: 0px;
+}
 .container {
     display: grid;
     width: 100vw;
@@ -79,7 +82,7 @@ background-color: salmon;
   a:visited {
     color: tomato;
   }
-  
+
 button{
   font-family: sans-serif;
   font-size: x-large;
